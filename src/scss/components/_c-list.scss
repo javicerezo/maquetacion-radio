@@ -1,0 +1,45 @@
+@use 'settings/variables' as v;
+
+.c-list {
+    display: block;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__h1 {
+        text-align: center;
+        border-top: 1px dashed #010101;
+        border-bottom: 1px dashed #010101;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 1.5rem;
+        border: 1px solid #000;
+        border-radius: 2rem;
+        margin: 2rem;
+        background-color: v.$blanco;
+        &-item {
+            border-radius: 1rem;
+            margin: auto;
+            img {
+                margin: auto;
+                border-radius: 1rem;
+                max-height: 10rem;
+                cursor: pointer;
+            }
+            img:hover {
+                border: 1px solid #000;
+                box-shadow: 2px 2px 7px rgba(#000, 0.6);
+            }
+        }
+    }
+    &__p {
+        padding: 2rem;
+        p {
+            padding: 0;
+        }
+    }
+}

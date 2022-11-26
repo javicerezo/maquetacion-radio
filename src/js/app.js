@@ -1,34 +1,38 @@
 (function(){
     // VARIABLES
-    let imagenEmisoraSuena = document.querySelector('#imagenRadio');
-    let nombreEmisoraSuena = document.querySelector('#nombreRadio');
-    let frecuenciaEmisoraSuena = document.querySelector('#frecuenciaRadio');
+    let imgEmisora = document.querySelector('#imgRadio');
+    let nombRadio = document.querySelector('#nombRadio');
+    let frRadio = document.querySelector('#frRadio');
     let ranking = document.querySelector('#ranking');
 
-    const emisorasListado = document.querySelector('#emisoras_listado');
+    const listEmisoras = document.querySelector('#listEmisoras');
     let listaTop = [];
 
     // EVENTOS
     document.addEventListener('DOMContentLoaded', () => {
         iniciarApp();
     });
-    emisorasListado.addEventListener('click', cambiarEmisora);
+    listEmisoras.addEventListener('click', cambiarEmisora);
 
     // FUNCIONES
     function iniciarApp() {
-        imagenEmisoraSuena.src = "imagenes/modulador2.png";
-        nombreEmisoraSuena.textContent = '---------';
-        frecuenciaEmisoraSuena.textContent = '---------';
+        imgEmisora.src = "build/img/LogoRadio.png";
+        nombRadio.textContent = '---------';
+        frRadio.textContent = '---------';
     };
 
     function cambiarEmisora(e) {
         e.preventDefault();
         const srcEmisora = e.target.getAttribute('src');
 
-        let ObjEmisora = listaEmisoras.find(e => srcEmisora === e.imagen);
-        imagenEmisoraSuena.src = ObjEmisora.imagen;
-        nombreEmisoraSuena.textContent = ObjEmisora.nombreEmisora;
-        frecuenciaEmisoraSuena.textContent = ObjEmisora.frecuenciaEmisora;
+        let ObjEmisora = dbEmisoras.find( e => srcEmisora === e.imagen);
+        console.log(ObjEmisora);
+
+        imgEmisora.src = ObjEmisora.imagen;
+        nombRadio.textContent = ObjEmisora.nombreEmisora;
+        frRadio.textContent = ObjEmisora.frecuenciaEmisora;
+
+        console.log(imgEmisora.src)
 
         ordenaEmisoras(ObjEmisora);
         suenaEmisora(ObjEmisora);

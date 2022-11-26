@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Radio Decibelios</title>
+    <link rel="shortcut icon" href="build/img/logo/favicon-transp.webp" type="image/x-icon">
+    <!-- <link rel="preload" href="build/css/main.css" as="style"> -->
+    <link rel="stylesheet" href="build/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="o-bg-gradient js-body">
+    <!-- HEADER -->
+    <header class="c-header js-header">
+        <div class="c-header__container o-container">
+            <div class="c-header__logo">
+                <a href="index.html">
+                    <picture>
+                        <source srcset="build/img/LogoRadio.webp" type="image/webp">
+                        <source srcset="build/img/LogoRadio.png" type="image/png">
+                        <img loading="lazy" src="build/img/LogoRadio.png" alt="logo de la radio">
+                    </picture>
+                </a>
+            </div>
+            <nav class="c-header__nav">
+                <a class="c-header__nav-link" href="#">Información</a>
+                <a class="c-header__nav-link" href="#">Contacto</a>
+                <a class="c-header__nav-link" href="#">Publicidad</a>
+                <a class="c-header__nav-link" href="#">¿No hay sonido?</a>
+            </nav>
+        </div>
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- EMISORA -->
+    <div class="c-emisora">
+        <div class="c-emisora__container o-container">
+            <div class="c-emisora__container2 o-container o-col-50">
+                <div class="c-emisora__online">
+                    <div class="c-emisora__direct">
+                        <picture class="c-emisora__direct-picture">
+                            <img class="c-emisora__direct-picture-img" 
+                            loading="lazy" src="build/img/LogoRadio.png" alt="imagen emisora" id="imgRadio">
+                        </picture>
+                        <div class="c-emisora__direct-text">
+                            <p id="nombRadio"></p>
+                            <p id="frRadio"></p>
+                        </div>
+                    </div>
+                    <div class="c-emisora__direct-audio">
+                        <audio src="" class="audio" id="audio" controls></audio>
+                    </div>
+                </div>
+                <div class="c-emisora__listTop">
+                    <p class="c-emisora__listTop-tittle">TOP 5 </p>
+                    <div class="c-emisora__listTop-top5" id="ranking">
+                        <div class="c-emisora__listTop-top5-item">
+                            <p class="c-emisora__listTop-p">1.- 
+                                <span class="c-emisora__listTop-p--mod" id="top1">---------</span>
+                            </p>
+                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                        <div class="c-emisora__listTop-top5-item">
+                            <p class="c-emisora__listTop-p">2.- 
+                                <span class="c-emisora__listTop-p--mod" id="top2">---------</span>
+                            </p>
+                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                        <div class="c-emisora__listTop-top5-item">
+                            <p class="c-emisora__listTop-p">3.- 
+                                <span class="c-emisora__listTop-p--mod" id="top3">---------</span>
+                            </p>
+                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                        <div class="c-emisora__listTop-top5-item">
+                            <p class="c-emisora__listTop-p">4.- 
+                                <span class="c-emisora__listTop-p--mod" id="top4">---------</span>
+                            </p>
+                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                        <div class="c-emisora__listTop-top5-item">
+                            <p class="c-emisora__listTop-p">5.- 
+                                <span class="c-emisora__listTop-p--mod" id="top5">---------</span>
+                            </p>
+                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN EMISORA -->
+
+    <!-- LISTADO -->
+    <div class="c-list">
+        <div class="c-list__container o-container">
+            <h1 class="c-list__h1 o-col-80">DIRECTOS</h1>
+            <div class="c-list__grid o-col-80" id="listEmisoras">
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://los40.com/los40/imagenes/2016/07/12/album/1468301612_739102_1496038374_album_normal.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cadena100.svg/1161px-Cadena100.svg.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://radiodigital.fm/wp-content/uploads/2022/01/logo-cadena-digital.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/CANAL_FIESTA_RADIO-copia6.jpg/1200px-CANAL_FIESTA_RADIO-copia6.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Canal_Sur_Radio.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://www.cmb.cat/wp-content/uploads/2018/03/LOGO-Catalunya-radio.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://cope-cdnmed.agilecontent.com/resources/jpg/0/3/1650636370430.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://tonimascaroradio.files.wordpress.com/2016/08/logo-dial-1.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/EsRadio_logo.svg/2560px-EsRadio_logo.svg.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://image.europafm.com/clipping/cmsimages01/2022/10/06/E482EE0F-94B7-4549-BEDF-A9EE57151B27/nuevo-logo-europa_69.jpg?crop=1200,675,x0,y13&width=1280&height=720&optimize=low&format=webply" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="http://api.my-radios.com/images/thumb.php?countryCode=ES&name=Flaix_FM.png&size=200" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://www.radio.es/images/broadcasts/50/d2/4927/c300.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://d3kle7qwymxpcy.cloudfront.net/images/broadcasts/5d/cd/4229/1/c175.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://i1.sndcdn.com/avatars-000578452659-0es7eq-t500x500.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://myradioonline.es/public/uploads/radio_img/radio-andalucia-informacion/fb_cover.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Radio_5_RNE_Spain.svg/541px-Radio_5_RNE_Spain.svg.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://opennuclear.org/sites/default/files/styles/hero_image_837x460/public/2022-07/bbc-radio-4.jpeg?itok=pCo7ENTB" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/RNE_Radio_3_%282016%29.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://cdn-profiles.tunein.com/s9752/images/logog.png?t=153858" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Logotip_de_RAC_1.svg/2048px-Logotip_de_RAC_1.svg.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/RAC105.svg/1200px-RAC105.svg.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://image.ondacero.es/clipping/cmsimages01/2022/03/24/34F4C65C-7DA5-4C88-9CAC-3F4B2234B965/onda-cero-logo-seccion_69.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://seeklogo.com/images/M/maxima-fm-logo-3B1B8E0D56-seeklogo.com.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://www.radio.es/images/broadcasts/7b/a5/13396/1/c300.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://cdn-profiles.tunein.com/s7989/images/logog.jpg?t=164314" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDyrNaLrXdNxSPTuzSkGIXC5s-cC53v0QY3lbh6ACcg&s" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/KISS_FM_logo.svg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://jfkibiza.com/assets/logo-black.svg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://res.cloudinary.com/filtermusic/w_500,c_scale,f_auto,q_auto/v1637141626/ibiza-sonica-radio_0.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://d3kle7qwymxpcy.cloudfront.net/images/broadcasts/c1/fe/1645/1/c175.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wjFiSSKyZH1mEP01WCm8bqKtaNkqHxTpnjxzHALkhg&s" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="http://cdn-profiles.tunein.com/s156760/images/logod.png?t=637693035400000000" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://static.mytuner.mobi/media/tvos_radios/a42mjsqwnw.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd22TaEgNx5gaZbmzCwAvYoRr8IWmlMdBomA&usqp=CAU" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Cadena_Ser_logo-2.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://www.radioteletaxi.com/rttwp/wp-content/uploads/2019/11/logortt-nuevo.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/RockFM_Logo.svg/1200px-RockFM_Logo.svg.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://pbs.twimg.com/profile_images/1168549721771823108/QAiElJn3_400x400.jpg" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://radiomaria.es/wp-content/uploads/2022/04/RM_22_principal_pais_web.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Radio_Cl%C3%A1sica_RNE_Spain.svg/1280px-Radio_Cl%C3%A1sica_RNE_Spain.svg.png" alt="boton escuchar radio">
+                </picture>
+                <picture class="c-list__grid-item">
+                    <img loading="lazy" src="https://img1.freepng.es/20180704/hsf/kisspng-radio-capital-fm-broadcasting-internet-radio-telev-5b3d9706971590.1112608715307630146189.jpg" alt="boton escuchar radio">
+                </picture>
+            </div>
+            <div class="c-list__p">
+                <p>HAZ CLICK PARA ESCUCHAR LA RADIO</p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN LISTADO -->
+
+    <!-- FOOTER -->
+    <footer class="c-footer">
+        <div class="c-footer__container o-container">
+            <div class="c-footer__email">
+                <p class="c-footer__email-link"><a href="mailto:hola@radiodecibelios.es">| hola@radiodecibelios.es |</a></p>
+            </div>
+            <div class="c-footer__social">
+                <a class="c-footer__social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="c-footer__social-link" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="c-footer__social-link" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="c-footer__social-link" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <script src="src/js/modernizr.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="src/js/base_datos.js"></script>
+
+</body>
+
+</html>

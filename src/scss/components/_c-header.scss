@@ -1,0 +1,32 @@
+@use 'settings/variables' as v;
+
+.c-header {
+    display: block;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: v.$colorHeader;
+        padding: 2rem 0;
+    }
+
+    &__logo {
+        display: block;
+        height: auto;
+    }
+
+    &__nav {
+        padding: 1rem 0;
+        &-link {
+            display: inline-block;
+            padding: 0 1.5rem;
+            color: v.$blanco;
+        }
+        &-link:hover {
+            color: v.$colorHover;
+        }
+    }
+    
+
+}

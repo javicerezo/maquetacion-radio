@@ -1,0 +1,78 @@
+@use 'settings/variables' as v;
+
+.c-emisora {
+    display: block;
+    &__container {
+        padding: v.$paddingSecciones;
+    }
+    &__container2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        background-color: v.$colorEmisora;
+    }
+    &__online {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    &__direct {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto 0;
+        &-picture {
+            padding: 1rem;
+            max-width: 20rem;
+            &-img {
+                border-radius: 1.5rem;
+            }
+        }
+        &-text {
+            padding: 1rem;
+            color: v.$blanco;
+        }
+    }
+    &__direct-audio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__listTop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-tittle {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0.5rem;
+            color: v.$colorListaTop;
+        }
+        &-top5 {
+            padding: 1rem;
+            width: 100%;
+            &-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 2rem;
+                padding-top: 2rem;
+                border-bottom: 0.2rem dotted #757575;
+            }
+        }
+        &-p {
+            color: v.$colorListaTop;
+            &--mod {
+                color: v.$blanco;
+                text-transform: lowercase;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

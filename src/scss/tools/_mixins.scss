@@ -1,0 +1,37 @@
+@use 'settings/variables' as v;
+
+// RESPONSIVE
+@mixin telefono {
+    @media (min-with: v.$telefono){
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-with: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-with: v.$desktop){
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @media (min-with: v.$desktopXL){
+        @content;
+    }
+}
+@mixin telefonoxs {
+    @media (min-width: 0px) and (max-width: 500px) {
+        @content;
+    }
+}
+
+// GRID
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}

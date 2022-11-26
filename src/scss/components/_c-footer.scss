@@ -1,0 +1,42 @@
+@use 'settings/variables' as v;
+
+.c-footer {
+    display: block;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        background-color: v.$colorFooter;
+    }
+    &__email {
+        padding-bottom: 1rem;
+    }
+    &__email-link {
+        color: v.$blanco;
+    }
+    &__email-link:hover {
+        color: v.$colorHover;
+    }
+    &__social {
+        padding-top: 1rem;
+    }
+    &__social-link {
+        padding: 0 1rem;
+        color: v.$blanco;
+    }
+    .fa-facebook-f:hover {
+        color: v.$colorFacebook;
+    }
+    .fa-twitter:hover {
+        color: v.$colorTwitter;
+    }
+    .fa-instagram:hover {
+        color: v.$colorInstasgram;
+    }
+    .fa-youtube:hover {
+        color: v.$colorYoutube;
+    }
+}
