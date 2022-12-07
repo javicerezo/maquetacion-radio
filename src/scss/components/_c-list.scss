@@ -1,26 +1,48 @@
 @use 'settings/variables' as v;
+@use 'tools/mixins' as m;
 
 .c-list {
     display: block;
+    padding-top: 3rem;
+
     &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include m.flex (column, center, center);
     }
+
     &__h1 {
-        text-align: center;
         border-top: 1px dashed #010101;
         border-bottom: 1px dashed #010101;
+        font-size: 2rem;
+
+        @include m.telefonoXL {
+            font-size: 2.5rem;
+        }
+        @include m.tablet {
+            font-size: 3.1rem;
+        }
     }
+
     &__grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-gap: 1.5rem;
+        @include m.grid (2, 0.8rem);
+        padding: 1rem;
         border: 1px solid #000;
         border-radius: 2rem;
         margin: 2rem;
         background-color: v.$blanco;
+
+        @include m.telefonoM {
+            @include m.grid (3, 1rem);
+        }
+        @include m.telefonoXL {
+            @include m.grid (4, 1rem);
+        }
+        @include m.tablet {
+            @include m.grid (7, 1.5rem);
+        }
+        @include m.desktop {
+            width: 75%;
+        }
+
         &-item {
             border-radius: 1rem;
             margin: auto;
@@ -39,7 +61,13 @@
     &__p {
         padding: 2rem;
         p {
-            padding: 0;
+            font-size: 1.1rem;
+        }
+        @include m.telefonoXL {
+            padding: 1.5rem;
+            p {
+                font-size: 1.6rem;
+            }
         }
     }
 }

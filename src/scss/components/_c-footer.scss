@@ -1,27 +1,36 @@
 @use 'settings/variables' as v;
+@use 'tools/mixins' as m;
 
 .c-footer {
     display: block;
-
+    
     &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem 0;
+        @include m.flex (column, space-around, center);
         background-color: v.$colorFooter;
+        @include m.telefonoXL {
+            @include m.flex (row, space-around, center);
+            padding: 1.5rem 0;
+        }
     }
     &__email {
-        padding-bottom: 1rem;
+        padding: 1rem;
     }
     &__email-link {
         color: v.$blanco;
+        font-size: 1.2rem;
+        @include m.telefonoXL {
+            font-size: 1.6rem;
+        }
     }
     &__email-link:hover {
         color: v.$colorHover;
+        font-size: 1.2rem;
+        @include m.telefonoXL {
+            font-size: 1.6rem;
+        }
     }
     &__social {
-        padding-top: 1rem;
+        padding: 1rem;
     }
     &__social-link {
         padding: 0 1rem;

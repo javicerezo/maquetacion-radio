@@ -1,32 +1,84 @@
 @use 'settings/variables' as v;
+@use 'tools/mixins' as m;
 
 .c-header {
     display: block;
+
     &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background-color: v.$colorHeader;
-        padding: 2rem 0;
+        padding: 1rem 1rem 1.5rem;
+        @include m.flex (column, space-between, center);
+        
+        @include m.tablet {
+            padding: 1.5rem;
+        }
     }
 
     &__logo {
         display: block;
-        height: auto;
+        margin: 0 2rem;
+        max-width: 20rem;
+        @include m.tablet {
+            max-width: 40rem;
+            margin: auto;
+        }
     }
 
+    &__nav-container {
+        @include m.flex (row, flex-start, flex-start);
+        width: 95%;
+        position: relative;
+        top: 0;
+        left: 0;
+        @include m.telefonoXL {
+            @include m.flex (row, flex-start, center);
+        }
+        @include m.tablet {
+            @include m.flex (column, center, center);
+        }
+    }
+
+    &__nav-button {
+        font-size: 1.4rem;
+        display: inline-block;
+        @include m.tablet{
+            display: none;
+        }
+    }
+
+
     &__nav {
-        padding: 1rem 0;
+        @include m.flex (column, center, flex-start);
+        flex-wrap: wrap;
+        // position: relative;
+        // width: 0;
+        // opacity: 0;
+        display: none;
+        
         &-link {
-            display: inline-block;
-            padding: 0 1.5rem;
+            padding: 0.3rem 1.5rem;
             color: v.$blanco;
+            font-size: 1rem;
         }
         &-link:hover {
             color: v.$colorHover;
+            font-weight: bold;
+        }
+
+        @include m.telefonoXL {
+            @include m.flex (row, center, center);
+            // height: auto;
+            // opacity: 1;
+            // visibility: visible;
+            // display: block;
+            &-link {
+                font-size: 1.1rem;
+            }
+        }
+        @include m.tablet {
+            padding: 1rem 0;
+            &-link {
+                font-size: 1.6rem;
+            }
         }
     }
-    
-
 }

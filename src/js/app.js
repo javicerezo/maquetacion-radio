@@ -11,8 +11,9 @@
     // EVENTOS
     document.addEventListener('DOMContentLoaded', () => {
         iniciarApp();
+        
+        listEmisoras.addEventListener('click', cambiarEmisora);
     });
-    listEmisoras.addEventListener('click', cambiarEmisora);
 
     // FUNCIONES
     function iniciarApp() {

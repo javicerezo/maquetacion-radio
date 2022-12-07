@@ -3,11 +3,11 @@ $principal: sans-serif;
 
 /* colores */
 $colorSecundario: #C7C7C7;
-$colorHeader: #757575;
+$colorHeader: #a0969688;
 $colorEmisora: #2e2b2bde;
 $colorFooter: #1d1818;
-$colorHover: #3434e4;
-$colorListaTop: #5c66c0;
+$colorHover: #f8e912;
+$colorListaTop: #3434e4;
 
 $colorFacebook: #3b5998;
 $colorTwitter: #1da1f2;
@@ -16,17 +16,19 @@ $colorYoutube: #cd201f;
 
 $negro: #000000;
 $blanco: #ffffff;
-$verde: #4cb8b3;
-$amarillo: #fef46d;
-$morado: #752f97;
 
-/* tamaños para media queries */
-$telefono: 480px;
+/* 
+tamaños para media queries (desde este tamaño 
+en adelante, ej: @media (min-width: $tablet)
+*/
+
+$telefonoM: 320px;
+$telefonoXL: 420px;
 $tablet: 768px;
-$desktop: 992px;
-$desktopXL: 1200px;
+$desktop: 1024px;
+$desktopXL: 1440px;
 
 /* Espaciados */
-$padding_col: 2rem;
-$paddingSecciones: 5rem 0;
+$padding_col: 1rem;
+$paddingSecciones: 3rem 0;
 $marginitems: 40px 0;

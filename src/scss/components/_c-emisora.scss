@@ -1,69 +1,122 @@
 @use 'settings/variables' as v;
+@use 'tools/mixins' as m;
 
 .c-emisora {
     display: block;
     &__container {
-        padding: v.$paddingSecciones;
+        padding: 0;
+        @include m.tablet {
+            padding: v.$paddingSecciones;
+        }
     }
     &__container2 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1.5rem;
-        padding: 1.5rem;
+        @include m.flex (column, center, center);
         border-radius: 1.5rem;
         background-color: v.$colorEmisora;
+        border: 1px solid v.$negro;
+        
+        @include m.telefonoXL {
+            @include m.grid (3, 1.5rem);
+            padding: 1rem 2rem;
+        }
+        @include m.tablet {
+            width: 75%;
+        }
+        @include m.desktop {
+            width: 50%;
+        }
     }
     &__online {
-        grid-column: span 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        width: 100%;
+        @include m.flex (column, space-between, center);
+        
+        @include m.telefonoXL {
+            height: 100%;
+            grid-column: span 2;
+            padding: 1rem 0;
+        }
+        @include m.tablet {
+            padding: 2rem;
+        }
     }
     &__direct {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto 0;
+        @include m.flex (row, space-around, center);
+        margin: 1rem auto;
         &-picture {
-            padding: 1rem;
-            max-width: 20rem;
+            margin: 1rem;
+            max-width: 10rem;
             &-img {
                 border-radius: 1.5rem;
             }
         }
         &-text {
+            font-size: 1.3rem;
             padding: 1rem;
             color: v.$blanco;
+            text-align: center;
+            p {
+                padding: 0.5rem;
+            }
+        }
+        @include m.telefonoXL {
+            &-picture {
+                max-width: 12rem;
+            }
+        }
+        @include m.tablet {
+            &-picture {
+                max-width: 18rem;
+            }
+            &-text {
+                font-size: 1.6rem;
+            }
         }
     }
     &__direct-audio {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        height: auto;
+        @include m.flex (row, center, center);
+        audio {
+            height: 30px;
+        }
     }
     &__listTop {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: 2rem 1rem 1rem 1rem;
+        width: 100%;
+        @include m.telefonoXL {
+            margin: 1rem;
+        }
         &-tittle {
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             margin: 0.5rem;
             color: v.$colorListaTop;
+            @include m.telefonoXL {
+                font-size: 1.7rem;
+            }
+            @include m.tablet {
+                font-size: 2rem;
+            }
         }
         &-top5 {
-            padding: 1rem;
+            padding: 0 0.5rem 0.5rem 0.5rem;
             width: 100%;
+            @include m.tablet {
+                padding: 1rem;
+            }
             &-item {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 2rem;
-                padding-top: 2rem;
-                border-bottom: 0.2rem dotted #757575;
+                @include m.flex (row, space-between, center);
+                font-size: 1.1rem;
+                padding: 1.1rem 0 0.2rem 0;
+                border-bottom: 0.1rem dotted v.$colorListaTop;
+                @include m.telefonoXL {
+                    padding-top: 1.3rem;
+                }
+                @include m.tablet {
+                    padding-top: 1.5rem;
+                    font-size: 2rem;
+                }
             }
         }
         &-p {
@@ -71,8 +124,17 @@
             &--mod {
                 color: v.$blanco;
                 text-transform: lowercase;
-                font-size: 1.5rem;
+                font-size: 1.1rem;
+                @include m.tablet {
+                    font-size: 1.5rem;
+                }
             }
+        }
+        &-link {
+            cursor: pointer;
+        }
+        &-link:hover {
+            color: v.$colorHover;
         }
     }
 }

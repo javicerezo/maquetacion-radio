@@ -78,7 +78,7 @@ const dbEmisoras = [
         enlace : ''
     },
     {
-        nombreEmisora : 'GUM FM', 
+        nombreEmisora : 'Gum FM', 
         frecuenciaEmisora : '', 
         imagen : 'https://i1.sndcdn.com/avatars-000578452659-0es7eq-t500x500.jpg', 
         enlace : ''
@@ -114,61 +114,61 @@ const dbEmisoras = [
         enlace : ''
     },
     {
-        nombreEmisora : 'Rac 105 FM', 
+        nombreEmisora : 'Rac 1', 
         frecuenciaEmisora : '', 
         imagen : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Logotip_de_RAC_1.svg/2048px-Logotip_de_RAC_1.svg.png', 
         enlace : ''
     },
     {
-        nombreEmisora : 'Onda Cero', 
+        nombreEmisora : 'Rac 105 FM', 
         frecuenciaEmisora : '', 
         imagen : 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/RAC105.svg/1200px-RAC105.svg.png', 
         enlace : ''
     },
     {
-        nombreEmisora : 'Máxima FM', 
+        nombreEmisora : 'Onda Cero', 
         frecuenciaEmisora : '', 
         imagen : 'https://image.ondacero.es/clipping/cmsimages01/2022/03/24/34F4C65C-7DA5-4C88-9CAC-3F4B2234B965/onda-cero-logo-seccion_69.jpg', 
         enlace : ''
     },
     {
-        nombreEmisora : 'm80 Radio', 
+        nombreEmisora : 'Máxima FM', 
         frecuenciaEmisora : '', 
         imagen : 'https://seeklogo.com/images/M/maxima-fm-logo-3B1B8E0D56-seeklogo.com.png', 
         enlace : ''
     },
     {
-        nombreEmisora : 'Loca FM', 
+        nombreEmisora : 'm80 Radio', 
         frecuenciaEmisora : '', 
         imagen : 'https://www.radio.es/images/broadcasts/7b/a5/13396/1/c300.png', 
         enlace : ''
     },
     {
-        nombreEmisora : 'La Bomba Radio', 
+        nombreEmisora : 'Loca FM', 
         frecuenciaEmisora : '104.1', 
         imagen : 'https://cdn-profiles.tunein.com/s7989/images/logog.jpg?t=164314', 
         enlace : ''
     },
     {
-        nombreEmisora : 'Kiss FM', 
+        nombreEmisora : 'La Bomba Radio', 
         frecuenciaEmisora : '', 
         imagen : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDyrNaLrXdNxSPTuzSkGIXC5s-cC53v0QY3lbh6ACcg&s', 
         enlace : ''
     },
     {
-        nombreEmisora : 'JFK Radio', 
+        nombreEmisora : 'Kiss FM', 
         frecuenciaEmisora : '', 
         imagen : 'https://upload.wikimedia.org/wikipedia/commons/c/c0/KISS_FM_logo.svg', 
         enlace : ''
     },
     {
-        nombreEmisora : 'Ibiza Sónica', 
+        nombreEmisora : 'JFK Radio', 
         frecuenciaEmisora : '', 
         imagen : 'https://jfkibiza.com/assets/logo-black.svg', 
         enlace : ''
     },
     {
-        nombreEmisora : '', 
+        nombreEmisora : 'Ibiza Sónica', 
         frecuenciaEmisora : '', 
         imagen : 'https://res.cloudinary.com/filtermusic/w_500,c_scale,f_auto,q_auto/v1637141626/ibiza-sonica-radio_0.jpg', 
         enlace : ''

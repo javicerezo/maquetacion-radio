@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Radio Decibelios</title>
     <link rel="shortcut icon" href="build/img/logo/favicon-transp.webp" type="image/x-icon">
-    <!-- <link rel="preload" href="build/css/main.css" as="style"> -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="o-bg-gradient js-body">
     <!-- HEADER -->
-    <header class="c-header js-header">
+    <header class="c-header">
         <div class="c-header__container o-container">
             <div class="c-header__logo">
                 <a href="index.html">
@@ -27,11 +26,16 @@
                     </picture>
                 </a>
             </div>
-            <nav class="c-header__nav">
-                <a class="c-header__nav-link" href="#">Información</a>
-                <a class="c-header__nav-link" href="#">Contacto</a>
-                <a class="c-header__nav-link" href="#">Publicidad</a>
-                <a class="c-header__nav-link" href="#">¿No hay sonido?</a>
+            <nav class="c-header__nav-container">
+                <div class="c-header__nav-button js-header-button">
+                    <a href="#" class="c-header__nav-icon"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div  class="c-header__nav js-header-nav">
+                    <a class="c-header__nav-link" href="#">Información</a>
+                    <a class="c-header__nav-link" href="#">Contacto</a>
+                    <a class="c-header__nav-link" href="#">Publicidad</a>
+                    <a class="c-header__nav-link" href="#">¿No hay sonido?</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -40,7 +44,7 @@
     <!-- EMISORA -->
     <div class="c-emisora">
         <div class="c-emisora__container o-container">
-            <div class="c-emisora__container2 o-container o-col-50">
+            <div class="c-emisora__container2 o-container o-col-90">
                 <div class="c-emisora__online">
                     <div class="c-emisora__direct">
                         <picture class="c-emisora__direct-picture">
@@ -63,31 +67,31 @@
                             <p class="c-emisora__listTop-p">1.- 
                                 <span class="c-emisora__listTop-p--mod" id="top1">---------</span>
                             </p>
-                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
-                        </div>
+                            <a class="c-emisora__listTop-link" href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                        </div> 
                         <div class="c-emisora__listTop-top5-item">
                             <p class="c-emisora__listTop-p">2.- 
                                 <span class="c-emisora__listTop-p--mod" id="top2">---------</span>
                             </p>
-                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                            <a class="c-emisora__listTop-link" href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
                         </div>
                         <div class="c-emisora__listTop-top5-item">
                             <p class="c-emisora__listTop-p">3.- 
                                 <span class="c-emisora__listTop-p--mod" id="top3">---------</span>
                             </p>
-                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                            <a class="c-emisora__listTop-link" href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
                         </div>
                         <div class="c-emisora__listTop-top5-item">
                             <p class="c-emisora__listTop-p">4.- 
                                 <span class="c-emisora__listTop-p--mod" id="top4">---------</span>
                             </p>
-                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                            <a class="c-emisora__listTop-link" href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
                         </div>
                         <div class="c-emisora__listTop-top5-item">
                             <p class="c-emisora__listTop-p">5.- 
                                 <span class="c-emisora__listTop-p--mod" id="top5">---------</span>
                             </p>
-                            <a href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
+                            <a class="c-emisora__listTop-link" href="#" target="_blank"><i class="fas fa-step-forward"></i></a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +103,7 @@
     <!-- LISTADO -->
     <div class="c-list">
         <div class="c-list__container o-container">
-            <h1 class="c-list__h1 o-col-80">DIRECTOS</h1>
+            <h1 class="c-list__h1 o-col-80">EMISORAS</h1>
             <div class="c-list__grid o-col-80" id="listEmisoras">
                 <picture class="c-list__grid-item">
                     <img loading="lazy" src="https://los40.com/los40/imagenes/2016/07/12/album/1468301612_739102_1496038374_album_normal.jpg" alt="boton escuchar radio">
@@ -226,7 +230,7 @@
                 </picture>
             </div>
             <div class="c-list__p">
-                <p>HAZ CLICK PARA ESCUCHAR LA RADIO</p>
+                <p>- HAZ CLICK PARA ESCUCHAR LA RADIO -</p>
             </div>
         </div>
     </div>
@@ -249,9 +253,9 @@
     <!-- FIN FOOTER -->
 
     <script src="src/js/modernizr.js"></script>
-    <script src="src/js/app.js"></script>
     <script src="src/js/base_datos.js"></script>
-
+    <script src="src/js/nav.js"></script>
+    <script src="src/js/app.js"></script>
 </body>
 
 </html>
