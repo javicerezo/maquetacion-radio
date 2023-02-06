@@ -3,11 +3,10 @@
 
 .c-header {
     display: block;
-
     &__container {
         padding: 1rem 1rem 1.5rem;
         @include m.flex (column, space-between, center);
-        
+
         @include m.tablet {
             padding: 1.5rem;
         }
@@ -24,52 +23,39 @@
     }
 
     &__nav-container {
-        @include m.flex (row, flex-start, flex-start);
-        width: 95%;
-        position: relative;
-        top: 0;
-        left: 0;
-        @include m.telefonoXL {
-            @include m.flex (row, flex-start, center);
-        }
-        @include m.tablet {
-            @include m.flex (column, center, center);
+        width: 89%;
+        @include m.flex (row, flex-start, center);
+
+        @include m.telefonoXL{
+            @include m.flex (row, center, center);
         }
     }
 
     &__nav-button {
         font-size: 1.4rem;
-        display: inline-block;
-        @include m.tablet{
+        transition: all 0.4s ease;
+        @include m.flex(row, flex-start, flex-start);
+        @include m.telefonoXL{
             display: none;
         }
     }
 
-
     &__nav {
+        transition: all 4s ease;
+        &--visible {
+            height: auto;
+            opacity: 1;
+        }
+        &--noVisible {
+            height: 0;
+            opacity: 0;
+            display: none;
+        }
         @include m.flex (column, center, flex-start);
-        flex-wrap: wrap;
-        // position: relative;
-        // width: 0;
-        // opacity: 0;
-        display: none;
-        
-        &-link {
-            padding: 0.3rem 1.5rem;
-            color: v.$blanco;
-            font-size: 1rem;
-        }
-        &-link:hover {
-            color: v.$colorHover;
-            font-weight: bold;
-        }
-
         @include m.telefonoXL {
             @include m.flex (row, center, center);
-            // height: auto;
-            // opacity: 1;
-            // visibility: visible;
-            // display: block;
+            height: auto;
+            opacity: 1;
             &-link {
                 font-size: 1.1rem;
             }
@@ -80,5 +66,17 @@
                 font-size: 1.6rem;
             }
         }
+
+        
+        &-link {
+            padding: 0.3rem 1.5rem;
+            color: v.$blanco;
+            font-size: 1rem;
+        }
+        &-link:hover {
+            color: v.$colorHover;
+            font-weight: bold;
+        }
+        
     }
 }

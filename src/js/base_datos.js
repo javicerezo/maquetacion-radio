@@ -1,11 +1,5 @@
 const dbEmisoras = [
     {
-        nombreEmisora : '40 principales', 
-        frecuenciaEmisora : '93.9 FM',
-        imagen : 'https://los40.com/los40/imagenes/2016/07/12/album/1468301612_739102_1496038374_album_normal.jpg" alt="boton escuchar radio', 
-        enlace : 'https://los40.com/'
-    },
-    {
         nombreEmisora : 'Cadena 100', 
         frecuenciaEmisora : '99.5 FM', 
         imagen : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cadena100.svg/1161px-Cadena100.svg.png', 
