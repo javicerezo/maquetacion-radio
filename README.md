@@ -1,5 +1,5 @@
 # Radio Decibelios Online
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/radio_decibelios/master/src/assets/img/radio.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/maquetacion-radio/master/src/assets/img/radio.png)
 
 ## Ejemplo en vivo
 - [Haz click para ver el proyecto](https://javicerezo.github.io/radio_decibelios/) 🚀
@@ -18,8 +18,8 @@
 ## Vista previa del proyecto
 Si quieres hechar un vistazo al proyecto:
 
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/radio_decibelios/master/src/assets/img/radio-1.png)
-![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/radio_decibelios/master/src/assets/img/radio-2.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/maquetacion-radio/master/src/assets/img/radio-1.png)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/maquetacion-radio/master/src/assets/img/radio-2.png)
 
 ## Autor ✒️
 **JAVI CEREZO**
