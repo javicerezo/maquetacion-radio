@@ -1,5 +1,5 @@
 # Radio Decibelios Online
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/radio_decibelios/master/src/assets/img/radio.png)
 
 ## Ejemplo en vivo
 - [Haz click para ver el proyecto](https://javicerezo.github.io/radio_decibelios/) 🚀
