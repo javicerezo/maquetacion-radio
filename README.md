@@ -30,6 +30,7 @@ Si quieres hechar un vistazo al proyecto:
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente, haz doble click en el enlace del ejemplo en vivo o descargalo, y ejecuta el .html
+Ten en cuenta que para poder hacer cualquier tipo de modificación en los .sass o .js, primero deberás ejecutar el comando "npx gulp watchArchivos" del gulpfile.js
   
 ## Licencia 📄
 MIT Public License v3.0
