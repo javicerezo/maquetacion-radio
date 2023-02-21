@@ -18,10 +18,9 @@ $negro: #000000;
 $blanco: #ffffff;
 
 /* 
-tamaños para media queries (desde este tamaño 
-en adelante, ej: @media (min-width: $tablet)
+tamaños para media queries, desde este tamaño en adelante, 
+ej: @media (min-width: $tablet)...para hacerlo first mobile
 */
-
 $telefonoM: 320px;
 $telefonoXL: 420px;
 $tablet: 768px;
