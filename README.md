@@ -2,7 +2,7 @@
 ![Captura del proyecto](https://raw.githubusercontent.com/javicerezo/maquetacion-radio/master/src/assets/img/radio.png)
 
 ## Ejemplo en vivo
-- [Haz click para ver el proyecto](https://javicerezo.github.io/radio_decibelios/) 🚀
+- [Haz click para ver el proyecto](https://javicerezo.github.io/maquetacion-radio/) 🚀
 
 ## Descripción 📑
 - Maquetación de una radio online para comprobar la flexibilidad y robustez de la metodología **BEMIT**. Nota: este proyecto está centrado en la maquetación, no en el diseño ni en la funcionalidad de la web.
