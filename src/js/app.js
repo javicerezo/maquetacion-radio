@@ -17,7 +17,7 @@
 
     // FUNCIONES
     function iniciarApp() {
-        imgEmisora.src = "build/img/LogoRadio.png";
+        imgEmisora.src = "public/assets/imgs/LogoRadio.png";
         nombRadio.textContent = '---------';
         frRadio.textContent = '---------';
     };

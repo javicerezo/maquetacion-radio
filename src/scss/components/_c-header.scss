@@ -5,7 +5,7 @@
     display: block;
     &__container {
         padding: 1rem 1rem 1.5rem;
-        @include m.flex (column, space-between, center);
+        @include m.flex (column, nowrap, space-between, center);
 
         @include m.tablet {
             padding: 1.5rem;
@@ -24,17 +24,17 @@
 
     &__nav-container {
         width: 89%;
-        @include m.flex (row, flex-start, center);
+        @include m.flex (row, nowrap, flex-start, center);
 
         @include m.telefonoXL{
-            @include m.flex (row, center, center);
+            @include m.flex (row, nowrap, center, center);
         }
     }
 
     &__nav-button {
         font-size: 1.4rem;
         transition: all 0.4s ease;
-        @include m.flex(row, flex-start, flex-start);
+        @include m.flex(row, nowrap, flex-start, flex-start);
         @include m.telefonoXL{
             display: none;
         }
@@ -51,9 +51,9 @@
             opacity: 0;
             display: none;
         }
-        @include m.flex (column, center, flex-start);
+        @include m.flex (column, nowrap, center, flex-start);
         @include m.telefonoXL {
-            @include m.flex (row, center, center);
+            @include m.flex (row, nowrap, center, center);
             height: auto;
             opacity: 1;
             &-link {

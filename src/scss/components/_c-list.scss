@@ -6,7 +6,7 @@
     padding-top: 3rem;
 
     &__container {
-        @include m.flex (column, center, center);
+        @include m.flex (column, nowrap, center, center);
     }
 
     &__h1 {

@@ -5,10 +5,10 @@
     display: block;
     
     &__container {
-        @include m.flex (column, space-around, center);
+        @include m.flex (column, nowrap, space-around, center);
         background-color: v.$colorFooter;
         @include m.telefonoXL {
-            @include m.flex (row, space-around, center);
+            @include m.flex (row, nowrap, space-around, center);
             padding: 1.5rem 0;
         }
     }

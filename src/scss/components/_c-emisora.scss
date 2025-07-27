@@ -10,7 +10,7 @@
         }
     }
     &__container2 {
-        @include m.flex (column, center, center);
+        @include m.flex (column, nowrap, center, center);
         border-radius: 1.5rem;
         background-color: v.$colorEmisora;
         border: 1px solid v.$negro;
@@ -28,7 +28,7 @@
     }
     &__online {
         width: 100%;
-        @include m.flex (column, space-between, center);
+        @include m.flex (column, nowrap, space-between, center);
         
         @include m.telefonoXL {
             height: 100%;
@@ -40,7 +40,7 @@
         }
     }
     &__direct {
-        @include m.flex (row, space-around, center);
+        @include m.flex (row, nowrap, space-around, center);
         margin: 1rem auto;
         &-picture {
             margin: 1rem;
@@ -75,7 +75,7 @@
     &__direct-audio {
         width: 100%;
         height: auto;
-        @include m.flex (row, center, center);
+        @include m.flex (row, nowrap, center, center);
         audio {
             height: 30px;
         }
@@ -106,7 +106,7 @@
                 padding: 1rem;
             }
             &-item {
-                @include m.flex (row, space-between, center);
+                @include m.flex (row, nowrap, space-between, center);
                 font-size: 1.1rem;
                 padding: 1.1rem 0 0.2rem 0;
                 border-bottom: 0.1rem dotted v.$colorListaTop;
